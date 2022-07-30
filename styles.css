@@ -2,6 +2,10 @@ body {
     background-color: rgb(210, 208, 208);
     color: darkolivegreen;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 a {
@@ -9,9 +13,23 @@ a {
     text-decoration: none;
 }
 
-.info, .result {
+.info, .body, .uploader {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.info {
+    margin-bottom: 3%;
+}
+
+.result {
+    text-align: center;
+}
+
+.uploader {
+    width: 400px;
+    border: 1px solid rgb(32, 41, 18);
 }

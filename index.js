@@ -34,8 +34,8 @@ function onFileSelected(event) {
             const confidence = json_response?.data[0]?.confidences[0]?.confidence
 
             // show the prediction
-            predictionEl.innerHTML = `<u>Prediction: Yeezy ${label}</u>`
-            confidencesEl.innerHTML = `Confidence:<br> ${confidence}`
+            predictionEl.innerHTML = `Prediction: Yeezy ${label}`
+            confidencesEl.innerHTML = `Confidence: ${confidence}`
             errorEl.innerHTML = '';
             return;
         })
