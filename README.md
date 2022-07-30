@@ -1,3 +1,4 @@
 # yeezy-classifier
 
-This repo 
+This repo classifies yeezy shoes.
+
