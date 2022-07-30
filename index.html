@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yeezy Classifier</title>
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-        <h1>Predict whether a Yeezy is a 350, 500, or 700 based on image</h1>
+    <div class="info">
+        <h1>Classify Yeezys based on image</h1>
         <p>Model provided by <a href="https://github.com/fastai/fastai">fastai</a> and api hosted by <a href="https://hf.space/embed/se0ngbin/yeezy-classifier/+/" target="_blank">hugging face</a>
         </p>
         <a href="https://github.com/se0ngbin/yeezy-classifier" target="_blank">Github Repo</a>
-    </header>
-    <main>
-        <header>
+    </div>
+    <div>
+        <div class="result">
             <h2>Submit a picture of a Yeezy 350, 500, or 700</h2>
             <p id="prediction"></p>
             <p id="confidences"></p>
             <p id="error"></p>
-        </header>
-        <section>
+        </div>
+        <div>
             <img id="myImage" height="400" width="400">
             <form id="form">
                 <label for="fileInput"></label>
                 <input id="fileInput" type="file" onchange="onFileSelected(event)" name="File">
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
 	<script src="index.js"></script>
   </body>
 </html>
